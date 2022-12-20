@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('company', 100);
             $table->string('departure_station', 50);
-            $table->dateTimeTz('departure_time', $precision = 0);
+            $table->dateTime('departure_time');
             $table->string('arrival_station', 50);
-            $table->dateTimeTz('arrival_time', $precision = 0);
-            $table->tinyInteger('code_train');
+            $table->dateTime('arrival_time');
+            $table->string('code_train', 10);
             $table->smallInteger('n_carriages');
             $table->tinyInteger('is_in_time')->unsigned()->default(1);
             $table->tinyInteger('deleted')->unsigned()->default(0);

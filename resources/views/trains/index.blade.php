@@ -15,8 +15,7 @@
             <p>Numero carrozze: {{$train->n_carriages}}</p>
             
             </li>
-            
-                
+    
             @endforeach
         </ul>
     </div>
